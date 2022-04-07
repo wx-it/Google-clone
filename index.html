@@ -5,63 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href=".\Google-Icon-PNG_rwscww.png" />
+    <link rel="icon" href="svg/google.svg" />
     <title>Google clone</title>
   </head>
   <body>
-    <script src="script.js"></script>
-    <div class="mobile-nav"></div>
-    <div class="nav">
-      <ul>
-        <div class="nav1">
-          <li><i class="gg-menu"></i></li>
-          <li class="all">ALL</li>
-          <li id="gmail">gmail</li>
-          <li id="pics">Images</li>
+    <header>
+      <nav class="nav">
+        <div class="mobile-nav">
+          <ul>
+            <li>
+              <button class="menu">
+                <img src="svg/menu.svg" alt="" />
+              </button>
+            </li>
+            <li><a href="" class="blue" id="all">ALL</a></li>
+            <li><a href="" id="images">IMAGES</a></li>
+          </ul>
         </div>
-        <div class="nav2">
+        <ul>
+          <li><a href="" class="all">All</a></li>
+          <li><a href="" class="gmail">Gmail</a></li>
+          <li><a href="" class="images">Images</a></li>
+
           <li>
-            <i class="gg-menu-grid-o"></i>
+            <!-- change icon -->
+            <button aria-controls="dropdown" aria-expanded="false" class="grid">
+              <img src="svg/grid.svg" alt="" />
+            </button>
           </li>
-          <li><button>Login</button></li>
-        </div>
-      </ul>
-    </div>
+          <li>
+            <button class="login"><a href="">Sign in</a></button>
+          </li>
+        </ul>
+        <div id="dropdown" class="dropdown" data-visible="false"></div>
+      </nav>
+    </header>
     <div class="main">
-      <img src=".\google-logo-9831.png" alt="" />
+      <img class="logo" src=".\logo.png" alt="" />
 
       <form>
         <div class="searchbar">
-          <i class="gg-search"></i>
+          <img class="search" src="svg/Vector.svg" alt="" />
           <input type="text" />
         </div>
-        <ul>
-          <li><button>Google search</button></li>
-          <li><button>I'm lucky</button></li>
-        </ul>
+        <div class="buttons">
+          <button>Google search</button>
+          <button><a href="">I'm Feeling Lucky</a></button>
+        </div>
       </form>
     </div>
 
-    <div class="footer">
-      <p>Algeria</p>
-
-      <ul class="left">
-        <li>In regards to</li>
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>How does Google search work?</li>
-      </ul>
-      <ul class="right">
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
-      </ul>
-      <ul id="mobile-footer">
-        <li>Dark theme: off</li>
-        <li>Settings</li>
-        <li>Privacy</li>
-        <li>Terms</li>
-      </ul>
-    </div>
+    <footer>
+      <div class="footer">
+        <div class="section1">
+          <p>Algeria</p>
+        </div>
+        <div class="section2">
+          <ul class="left">
+            <li>About</li>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How search works</li>
+          </ul>
+          <ul class="right">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+          </ul>
+        </div>
+        <div class="mobile-footer">
+          <ul class="top">
+            <li>Dark theme: off</li>
+            <li>Settings</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+          </ul>
+          <ul class="bottom">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
